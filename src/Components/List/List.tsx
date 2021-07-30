@@ -20,7 +20,7 @@ export const List: React.FC<ListProps> = ({
             distanceBetweenLi={distanceBetweenLi}
             data-testid={'list'}
             fontWeight={clicked === item.id ? (fontWeight = 900) : (fontWeight = 400)}
-            onClick={() => setClicked(item.id)}>
+            onClick={() => setClicked(item)}>
             {item.name}
           </ListItem>
           {clicked === item.id ? <ArrowIcon fontSize={fontSize} data-testid={'icon'} /> : null}

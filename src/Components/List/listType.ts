@@ -11,7 +11,7 @@ export interface ListProps extends React.HTMLAttributes<HTMLElement> {
   /**
    *Callback which return all your list item object
    */
-  setClicked: (item: number) => void;
+  setClicked: (item: ListContent) => void;
 
   clicked: number | undefined;
   /**
